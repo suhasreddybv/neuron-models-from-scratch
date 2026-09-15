@@ -1,7 +1,11 @@
 # Hodgkin-Huxley model of a neuron
 #Block 1: Imports and Parameteres
+from pathlib import Path
+
 import numpy as np
 import matplotlib.pyplot as plt
+
+FIGURES = Path(__file__).resolve().parent.parent / "figures"
 
 # Simulation parameters
 dt = 0.01 #time step in ms
@@ -56,9 +60,9 @@ print(f"Initial conditions: V = {V_0} mV, m_0 = {m_0:.3f}, h_0 = {h_0:.3f}, n_0 
 #Injected current(step pulse)
 
 I_ext = np.zeros(len(time))
-I_ext[(time>=10.0)&(time<=110.0)]=10.0 #10mA/cm^2
+I_ext[(time>=10.0)&(time<=110.0)]=10.0 #10uA/cm^2
 
-#The value of 10.0mA/cm^2 is above the threshold for action potential generation.
+#The value of 10.0uA/cm^2 is above the threshold for action potential generation.
 
 # Block 5: The main simulation loop
 #Storage arrays
@@ -136,5 +140,5 @@ axes[3].set_xlabel('Time (ms)')
 axes[3].legend(loc='upper right',fontsize=8)
 
 plt.tight_layout()
-plt.savefig('HH simulation.png',dpi=150)
+plt.savefig(FIGURES / 'hh_simulation.png',dpi=150)
 plt.show()

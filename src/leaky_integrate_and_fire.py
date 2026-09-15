@@ -1,7 +1,11 @@
 # Block 1: Imports and Parameteres
 
+from pathlib import Path
+
 import numpy as np
 import matplotlib.pyplot as plt
+
+FIGURES = Path(__file__).resolve().parent.parent / "figures"
 
 # Simulation parameters
 dt = 0.1 #time step in ms - note time step is 10 times larger than in the HH model
@@ -112,6 +116,6 @@ axes[2].set_xlim(I_range.min(), I_range.max())
 axes[2].set_ylim(0, max(max(firing_rates_sim), max(firing_rates_theory)) * 1.1)
 
 plt.tight_layout()
-fig.savefig('LIF_simulation.png', dpi=150, bbox_inches='tight')
+fig.savefig(FIGURES / 'lif_simulation.png', dpi=150, bbox_inches='tight')
 plt.show()
 

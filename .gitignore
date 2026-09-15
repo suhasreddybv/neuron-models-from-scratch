@@ -1,0 +1,17 @@
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+pyrightconfig.json

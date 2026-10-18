@@ -6,6 +6,10 @@ Hodgkin–Huxley and leaky integrate-and-fire neurons implemented in NumPy from 
 
 ![Hodgkin–Huxley response to a 10 µA/cm² step: membrane potential, gating variables, conductances, injected current](figures/hh_simulation.png)
 
+## Roadmap
+
+This repository grows by one model per day in order of difficulty; see [ROADMAP.md](ROADMAP.md) for the sequence and [CONVENTIONS.md](CONVENTIONS.md) for the standard each model must meet.
+
 ## Method
 
 **Hodgkin–Huxley** (`src/hodgkin_huxley.py`). A single-compartment model with Na⁺, K⁺ and leak currents. It uses the squid-axon parameters of Hodgkin & Huxley (1952), written in the modern convention with rest at −65 mV: C_m = 1 µF/cm², ḡ_Na = 120, ḡ_K = 36, g_L = 0.3 mS/cm², E_Na = 50, E_K = −77, E_L = −54.4 mV. The gating variables m, h and n follow first-order kinetics with voltage-dependent α/β rates and start at their steady-state values. Integration is forward Euler at dt = 0.01 ms. The stimulus is a 10 µA/cm² step from 10 to 110 ms, which gives 7 action potentials (~70 Hz) and a return to rest after the step ends.
@@ -31,7 +35,7 @@ python src/leaky_integrate_and_fire.py  # writes figures/lif_simulation.png
 python src/check_hh_timestep.py         # prints convergence check
 ```
 
-Tested with Python 3.9, NumPy 1.26 and Matplotlib 3.9. No external data is needed.
+Tested with Python 3.9–3.10, NumPy 1.26, Matplotlib 3.9 and SciPy 1.15 (SciPy is used only for validation). No external data is needed.
 
 ## Limitations and failure cases
 

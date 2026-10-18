@@ -8,7 +8,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 - [x] Leaky integrate-and-fire (`src/leaky_integrate_and_fire.py`)
 - [x] Hodgkin–Huxley, squid axon (`src/hodgkin_huxley.py`)
-- [ ] FitzHugh–Nagumo
+- [x] FitzHugh–Nagumo (`src/fitzhugh_nagumo.py`)
   > Validate: nullclines and fixed point from the equations; Hopf bifurcation current found by sweep agrees with the linearised Jacobian prediction.
 - [ ] Quadratic integrate-and-fire and the theta neuron
   > Validate: f–I curve against the closed-form rate of the theta neuron; show the two models are equivalent under the change of variables.

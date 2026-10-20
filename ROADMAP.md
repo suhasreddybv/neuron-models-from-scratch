@@ -12,7 +12,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: nullclines and fixed point from the equations; Hopf bifurcation current found by sweep agrees with the linearised Jacobian prediction.
 - [x] Quadratic integrate-and-fire and the theta neuron (`src/quadratic_if_theta.py`)
   > Validate: f–I curve against the closed-form rate of the theta neuron; show the two models are equivalent under the change of variables.
-- [ ] Izhikevich (2003) simple model
+- [x] Izhikevich (2003) simple model (`src/izhikevich.py`)
   > Validate: reproduce the regular-spiking, intrinsically-bursting, chattering and fast-spiking regimes with the published parameter sets; compare firing rates with the paper's figure.
 - [ ] Exponential integrate-and-fire (EIF)
   > Validate: rheobase against the analytical value from the nullcline; spike-initiation sharpness vs ΔT.

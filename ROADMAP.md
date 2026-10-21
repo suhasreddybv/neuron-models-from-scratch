@@ -14,7 +14,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: f–I curve against the closed-form rate of the theta neuron; show the two models are equivalent under the change of variables.
 - [x] Izhikevich (2003) simple model (`src/izhikevich.py`)
   > Validate: reproduce the regular-spiking, intrinsically-bursting, chattering and fast-spiking regimes with the published parameter sets; compare firing rates with the paper's figure.
-- [ ] Exponential integrate-and-fire (EIF)
+- [x] Exponential integrate-and-fire (EIF) (`src/exponential_if.py`)
   > Validate: rheobase against the analytical value from the nullcline; spike-initiation sharpness vs ΔT.
 - [ ] Adaptive exponential integrate-and-fire (AdEx)
   > Validate: reproduce at least four firing patterns from Naud et al. (2008) with their parameter table; spike-frequency adaptation index.

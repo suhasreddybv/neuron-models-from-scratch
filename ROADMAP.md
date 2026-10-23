@@ -16,7 +16,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: reproduce the regular-spiking, intrinsically-bursting, chattering and fast-spiking regimes with the published parameter sets; compare firing rates with the paper's figure.
 - [x] Exponential integrate-and-fire (EIF) (`src/exponential_if.py`)
   > Validate: rheobase against the analytical value from the nullcline; spike-initiation sharpness vs ΔT.
-- [ ] Adaptive exponential integrate-and-fire (AdEx)
+- [x] Adaptive exponential integrate-and-fire (AdEx) (`src/adex.py`)
   > Validate: reproduce at least four firing patterns from Naud et al. (2008) with their parameter table; spike-frequency adaptation index.
 - [ ] Morris–Lecar
   > Validate: class I vs class II excitability from the two published parameter sets; onset frequency near 0 Hz (class I) vs finite (class II).

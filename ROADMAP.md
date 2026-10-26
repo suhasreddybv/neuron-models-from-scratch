@@ -22,7 +22,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: class I vs class II excitability from the two published parameter sets; onset frequency near 0 Hz (class I) vs finite (class II).
 - [x] Hindmarsh–Rose (`src/hindmarsh_rose.py`)
   > Validate: bursting vs tonic regimes as a function of I; inter-burst interval vs slow-variable time constant r.
-- [ ] Connor–Stevens (HH + A-type K current)
+- [x] Connor–Stevens (HH + A-type K current) (`src/connor_stevens.py`)
   > Validate: class I f–I curve (continuous from 0 Hz) vs HH class II; compare with Dayan & Abbott fig. 6.1.
 
 ## Tier 2 — Biophysics and numerics

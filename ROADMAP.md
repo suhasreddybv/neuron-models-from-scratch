@@ -27,7 +27,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 ## Tier 2 — Biophysics and numerics
 
-- [ ] HH with a proper integrator: RK4 and `solve_ivp` vs forward Euler
+- [x] HH with a proper integrator: RK4 and `solve_ivp` vs forward Euler (`src/hh_integrators.py`)
   > Validate: order-of-convergence plot (error vs dt on log–log axes) showing slope ≈ 1 for Euler and ≈ 4 for RK4; this also closes the "Forward Euler only" limitation in the README.
 - [ ] HH with temperature dependence (Q10)
   > Validate: spike width and rate vs temperature 6–20 °C; compare with the 1952 paper's statement that rates scale by Q10 ≈ 3.

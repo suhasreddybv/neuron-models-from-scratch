@@ -29,7 +29,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 - [x] HH with a proper integrator: RK4 and `solve_ivp` vs forward Euler (`src/hh_integrators.py`)
   > Validate: order-of-convergence plot (error vs dt on log–log axes) showing slope ≈ 1 for Euler and ≈ 4 for RK4; this also closes the "Forward Euler only" limitation in the README.
-- [ ] HH with temperature dependence (Q10)
+- [x] HH with temperature dependence (Q10) (`src/hh_temperature.py`)
   > Validate: spike width and rate vs temperature 6–20 °C; compare with the 1952 paper's statement that rates scale by Q10 ≈ 3.
 - [ ] Stochastic ion channels: Markov-chain Na/K channels (Gillespie or binomial) and the Fox–Lu diffusion approximation
   > Validate: as channel number N → large, the stochastic model converges to deterministic HH; spontaneous firing rate vs N.

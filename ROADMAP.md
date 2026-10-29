@@ -31,7 +31,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: order-of-convergence plot (error vs dt on log–log axes) showing slope ≈ 1 for Euler and ≈ 4 for RK4; this also closes the "Forward Euler only" limitation in the README.
 - [x] HH with temperature dependence (Q10) (`src/hh_temperature.py`)
   > Validate: spike width and rate vs temperature 6–20 °C; compare with the 1952 paper's statement that rates scale by Q10 ≈ 3.
-- [ ] Stochastic ion channels: Markov-chain Na/K channels (Gillespie or binomial) and the Fox–Lu diffusion approximation
+- [x] Stochastic ion channels: Markov-chain Na/K channels (Gillespie or binomial) and the Fox–Lu diffusion approximation (`src/stochastic_channels.py`)
   > Validate: as channel number N → large, the stochastic model converges to deterministic HH; spontaneous firing rate vs N.
 - [ ] Wang–Buzsáki fast-spiking interneuron
   > Validate: f–I curve reaches the paper's ~400 Hz; action potential width.

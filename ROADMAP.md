@@ -33,7 +33,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: spike width and rate vs temperature 6–20 °C; compare with the 1952 paper's statement that rates scale by Q10 ≈ 3.
 - [x] Stochastic ion channels: Markov-chain Na/K channels (Gillespie or binomial) and the Fox–Lu diffusion approximation (`src/stochastic_channels.py`)
   > Validate: as channel number N → large, the stochastic model converges to deterministic HH; spontaneous firing rate vs N.
-- [ ] Wang–Buzsáki fast-spiking interneuron
+- [x] Wang–Buzsáki fast-spiking interneuron (`src/wang_buzsaki.py`)
   > Validate: f–I curve reaches the paper's ~400 Hz; action potential width.
 - [ ] Noisy LIF: Ornstein–Uhlenbeck input and the diffusion approximation
   > Validate: firing rate against the Siegert formula; CV of inter-spike intervals vs μ/σ.

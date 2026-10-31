@@ -35,7 +35,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: as channel number N → large, the stochastic model converges to deterministic HH; spontaneous firing rate vs N.
 - [x] Wang–Buzsáki fast-spiking interneuron (`src/wang_buzsaki.py`)
   > Validate: f–I curve reaches the paper's ~400 Hz; action potential width.
-- [ ] Noisy LIF: Ornstein–Uhlenbeck input and the diffusion approximation
+- [x] Noisy LIF: Ornstein–Uhlenbeck input and the diffusion approximation (`src/noisy_lif.py`)
   > Validate: firing rate against the Siegert formula; CV of inter-spike intervals vs μ/σ.
 - [ ] Passive cable: analytical steady-state attenuation and a compartmental solver
   > Validate: simulated steady-state voltage along a finite cable vs the closed-form cosh solution; electrotonic length.

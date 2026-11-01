@@ -37,7 +37,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: f–I curve reaches the paper's ~400 Hz; action potential width.
 - [x] Noisy LIF: Ornstein–Uhlenbeck input and the diffusion approximation (`src/noisy_lif.py`)
   > Validate: firing rate against the Siegert formula; CV of inter-spike intervals vs μ/σ.
-- [ ] Passive cable: analytical steady-state attenuation and a compartmental solver
+- [x] Passive cable: analytical steady-state attenuation and a compartmental solver (`src/passive_cable.py`)
   > Validate: simulated steady-state voltage along a finite cable vs the closed-form cosh solution; electrotonic length.
 - [ ] Two-compartment Pinsky–Rinzel CA3 pyramidal model
   > Validate: bursting vs regular firing as a function of the coupling conductance g_c, as in the 1994 paper.

@@ -41,7 +41,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: simulated steady-state voltage along a finite cable vs the closed-form cosh solution; electrotonic length.
 - [x] Two-compartment Pinsky–Rinzel CA3 pyramidal model (`src/pinsky_rinzel.py`)
   > Validate: bursting vs regular firing as a function of the coupling conductance g_c, as in the 1994 paper.
-- [ ] Multi-compartment Traub-style neuron with active dendrites
+- [x] Multi-compartment Traub-style neuron with active dendrites (`src/traub_multicompartment.py`)
   > Validate: back-propagating action potential attenuation; compare with the two-compartment result.
 
 ## Tier 3 — Synapses and plasticity

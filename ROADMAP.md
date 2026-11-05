@@ -48,7 +48,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 - [x] Conductance-based synapses: AMPA, NMDA (Mg block) and GABA-A as exponential / alpha / bi-exponential kinetics (`src/conductance_synapses.py`)
   > Validate: NMDA I–V curve shows the Jahr–Stevens magnesium block; PSP shape vs analytical alpha function.
-- [ ] Short-term plasticity: Tsodyks–Markram depression and facilitation
+- [x] Short-term plasticity: Tsodyks–Markram depression and facilitation (`src/short_term_plasticity.py`)
   > Validate: steady-state PSP amplitude vs frequency against the closed-form expression.
 - [ ] Spike-timing-dependent plasticity (pair-based STDP)
   > Validate: reproduce the Bi & Poo (1998) window; weight distribution after Poisson input.

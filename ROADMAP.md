@@ -50,7 +50,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: NMDA I–V curve shows the Jahr–Stevens magnesium block; PSP shape vs analytical alpha function.
 - [x] Short-term plasticity: Tsodyks–Markram depression and facilitation (`src/short_term_plasticity.py`)
   > Validate: steady-state PSP amplitude vs frequency against the closed-form expression.
-- [ ] Spike-timing-dependent plasticity (pair-based STDP)
+- [x] Spike-timing-dependent plasticity (pair-based STDP) (`src/stdp_pair.py`)
   > Validate: reproduce the Bi & Poo (1998) window; weight distribution after Poisson input.
 - [ ] Rate-based Hebbian learning: Oja's rule recovers the first principal component
   > Validate: learned weight vector vs the top eigenvector of the input covariance (cosine similarity > 0.99).

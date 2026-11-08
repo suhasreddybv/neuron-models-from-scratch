@@ -54,7 +54,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: reproduce the Bi & Poo (1998) window; weight distribution after Poisson input.
 - [x] Rate-based Hebbian learning: Oja's rule recovers the first principal component (`src/oja_rule.py`)
   > Validate: learned weight vector vs the top eigenvector of the input covariance (cosine similarity > 0.99).
-- [ ] Triplet STDP (Pfister & Gerstner) and frequency dependence
+- [x] Triplet STDP (Pfister & Gerstner) and frequency dependence (`src/triplet_stdp.py`)
   > Validate: reproduce the frequency-dependent plasticity curve from Sjöström et al. (2001) qualitatively.
 
 ## Tier 4 — Networks and population models

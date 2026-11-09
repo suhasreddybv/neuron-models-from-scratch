@@ -59,7 +59,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 ## Tier 4 — Networks and population models
 
-- [ ] Wilson–Cowan excitatory–inhibitory population model
+- [x] Wilson–Cowan excitatory–inhibitory population model (`src/wilson_cowan.py`)
   > Validate: oscillation frequency vs linearised prediction at the Hopf point; phase plane with nullclines.
 - [ ] Hopfield network
   > Validate: storage capacity ≈ 0.138 N; overlap vs number of stored patterns.

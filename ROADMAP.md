@@ -61,7 +61,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 - [x] Wilson–Cowan excitatory–inhibitory population model (`src/wilson_cowan.py`)
   > Validate: oscillation frequency vs linearised prediction at the Hopf point; phase plane with nullclines.
-- [ ] Hopfield network
+- [x] Hopfield network (`src/hopfield_network.py`)
   > Validate: storage capacity ≈ 0.138 N; overlap vs number of stored patterns.
 - [ ] Brunel (2000) sparsely connected E/I LIF network
   > Validate: reproduce the asynchronous-irregular and synchronous-regular regimes from the phase diagram; population rate vs mean-field prediction.

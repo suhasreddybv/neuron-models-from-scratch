@@ -65,7 +65,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: storage capacity ≈ 0.138 N; overlap vs number of stored patterns.
 - [x] Brunel (2000) sparsely connected E/I LIF network (`src/brunel_network.py`)
   > Validate: reproduce the asynchronous-irregular and synchronous-regular regimes from the phase diagram; population rate vs mean-field prediction.
-- [ ] Ring attractor (continuous attractor for head direction)
+- [x] Ring attractor (continuous attractor for head direction) (`src/ring_attractor.py`)
   > Validate: bump stability; drift speed vs asymmetric input matches integration of velocity.
 - [ ] Balanced network (van Vreeswijk & Sompolinsky)
   > Validate: firing rates scale as predicted when input is increased; CV ≈ 1.

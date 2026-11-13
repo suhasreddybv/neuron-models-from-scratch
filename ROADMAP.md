@@ -67,7 +67,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: reproduce the asynchronous-irregular and synchronous-regular regimes from the phase diagram; population rate vs mean-field prediction.
 - [x] Ring attractor (continuous attractor for head direction) (`src/ring_attractor.py`)
   > Validate: bump stability; drift speed vs asymmetric input matches integration of velocity.
-- [ ] Balanced network (van Vreeswijk & Sompolinsky)
+- [x] Balanced network (van Vreeswijk & Sompolinsky) (`src/balanced_network.py`)
   > Validate: firing rates scale as predicted when input is increased; CV ≈ 1.
 - [ ] Liquid state machine / LIF reservoir on a simple temporal task
   > Validate: readout accuracy above chance with a held-out set; compare with a shuffled-label control.

@@ -69,7 +69,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: bump stability; drift speed vs asymmetric input matches integration of velocity.
 - [x] Balanced network (van Vreeswijk & Sompolinsky) (`src/balanced_network.py`)
   > Validate: firing rates scale as predicted when input is increased; CV ≈ 1.
-- [ ] Liquid state machine / LIF reservoir on a simple temporal task
+- [x] Liquid state machine / LIF reservoir on a simple temporal task (`src/liquid_state_machine.py`)
   > Validate: readout accuracy above chance with a held-out set; compare with a shuffled-label control.
 - [ ] Kuramoto oscillators with a neural phase-response curve
   > Validate: synchronisation transition at the analytical critical coupling K_c = 2/(πg(0)).

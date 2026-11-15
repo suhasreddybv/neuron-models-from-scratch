@@ -71,7 +71,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: firing rates scale as predicted when input is increased; CV ≈ 1.
 - [x] Liquid state machine / LIF reservoir on a simple temporal task (`src/liquid_state_machine.py`)
   > Validate: readout accuracy above chance with a held-out set; compare with a shuffled-label control.
-- [ ] Kuramoto oscillators with a neural phase-response curve
+- [x] Kuramoto oscillators with a neural phase-response curve (`src/kuramoto_prc.py`)
   > Validate: synchronisation transition at the analytical critical coupling K_c = 2/(πg(0)).
 
 ## Tier 5 — Models of cognition and data

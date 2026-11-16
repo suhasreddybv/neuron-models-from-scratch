@@ -76,7 +76,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 ## Tier 5 — Models of cognition and data
 
-- [ ] Drift-diffusion model of decision making
+- [x] Drift-diffusion model of decision making (`src/drift_diffusion.py`)
   > Validate: simulated accuracy and mean RT against the closed-form expressions for the pure DDM.
 - [ ] Leaky competing accumulator (Usher–McClelland)
   > Validate: reduces to the DDM in the appropriate limit.

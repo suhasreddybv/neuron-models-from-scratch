@@ -78,7 +78,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 
 - [x] Drift-diffusion model of decision making (`src/drift_diffusion.py`)
   > Validate: simulated accuracy and mean RT against the closed-form expressions for the pure DDM.
-- [ ] Leaky competing accumulator (Usher–McClelland)
+- [x] Leaky competing accumulator (Usher–McClelland) (`src/leaky_competing_accumulator.py`)
   > Validate: reduces to the DDM in the appropriate limit.
 - [ ] Reduced Jansen–Rit neural mass model of EEG
   > Validate: alpha-band peak in the power spectrum for the default parameters; bifurcation vs input rate.

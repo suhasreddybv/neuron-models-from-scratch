@@ -80,7 +80,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: simulated accuracy and mean RT against the closed-form expressions for the pure DDM.
 - [x] Leaky competing accumulator (Usher–McClelland) (`src/leaky_competing_accumulator.py`)
   > Validate: reduces to the DDM in the appropriate limit.
-- [ ] Reduced Jansen–Rit neural mass model of EEG
+- [x] Reduced Jansen–Rit neural mass model of EEG (`src/jansen_rit.py`)
   > Validate: alpha-band peak in the power spectrum for the default parameters; bifurcation vs input rate.
 - [ ] Simple spiking model of a Parkinsonian basal-ganglia loop (STN–GPe beta oscillations, Terman et al. 2002)
   > Validate: beta-band oscillation emerges when striatal inhibition of GPe is raised; disappears at baseline.

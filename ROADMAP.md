@@ -82,7 +82,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: reduces to the DDM in the appropriate limit.
 - [x] Reduced Jansen–Rit neural mass model of EEG (`src/jansen_rit.py`)
   > Validate: alpha-band peak in the power spectrum for the default parameters; bifurcation vs input rate.
-- [ ] Simple spiking model of a Parkinsonian basal-ganglia loop (STN–GPe beta oscillations, Terman et al. 2002)
+- [x] Simple spiking model of a Parkinsonian basal-ganglia loop (STN–GPe beta oscillations, Terman et al. 2002) (`src/stn_gpe_network.py`)
   > Validate: beta-band oscillation emerges when striatal inhibition of GPe is raised; disappears at baseline.
 
 ## Renewal note

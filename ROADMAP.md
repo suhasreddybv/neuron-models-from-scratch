@@ -85,6 +85,19 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
 - [x] Simple spiking model of a Parkinsonian basal-ganglia loop (STN–GPe beta oscillations, Terman et al. 2002) (`src/stn_gpe_network.py`)
   > Validate: beta-band oscillation emerges when striatal inhibition of GPe is raised; disappears at baseline.
 
+## Tier 6 — Harder extensions
+
+- [ ] Propagating action potential on an active HH cable (`src/hh_cable_propagation.py`)
+  > Validate: conduction velocity converges under dx/dt refinement and matches Hodgkin & Huxley's (1952) computed 18.8 m/s for the 238 µm squid axon within 10%; velocity scales as √(diameter) (log–log slope 0.5 ± 0.05).
+- [ ] Poisson GLM of a spiking neuron fitted by maximum likelihood (Pillow et al. 2008) (`src/poisson_glm.py`)
+  > Validate: stimulus and post-spike filters recovered from spikes simulated by a known GLM (correlation > 0.95); held-out log-likelihood beats a homogeneous-Poisson control; time-rescaling KS test passes.
+- [ ] Random rate network and the transition to chaos (Sompolinsky, Crisanti & Sommers 1988) (`src/rate_chaos.py`)
+  > Validate: largest Lyapunov exponent crosses zero at g = 1 (within 0.1 for N ≥ 1000); for g > 1 the autocorrelation matches the dynamic mean-field (classical particle in a potential) solution.
+- [ ] Fokker–Planck population density for LIF neurons (Brunel & Hakim 1999) (`src/lif_fokker_planck.py`)
+  > Validate: stationary density and firing rate match the Siegert closed form; finite-difference PDE solution matches a large direct LIF population simulation after a step in input (rate transient within 5%).
+- [ ] Reduced Wong–Wang (2006) attractor model of perceptual decisions (`src/wong_wang_decision.py`)
+  > Validate: fixed points and saddle from the two-variable mean-field equations agree with simulation; psychometric and chronometric curves vs coherence qualitatively match Wong & Wang fig. 4 (Weibull threshold reported).
+
 ## Renewal note
 
 The GitHub token used by the daily job is a fine-grained PAT scoped to this repository. Check its expiry on github.com → Settings → Developer settings; the job will fail at `git push` once it lapses.

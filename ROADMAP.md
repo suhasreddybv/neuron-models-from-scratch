@@ -91,7 +91,7 @@ Edit this file freely: reorder, remove, or add rows. The job always takes the fi
   > Validate: conduction velocity converges under dx/dt refinement and matches Hodgkin & Huxley's (1952) computed 18.8 m/s for the 238 µm squid axon within 10%; velocity scales as √(diameter) (log–log slope 0.5 ± 0.05).
 - [x] Poisson GLM of a spiking neuron fitted by maximum likelihood (Pillow et al. 2008) (`src/poisson_glm.py`)
   > Validate: stimulus and post-spike filters recovered from spikes simulated by a known GLM (correlation > 0.95); held-out log-likelihood beats a homogeneous-Poisson control; time-rescaling KS test passes.
-- [ ] Random rate network and the transition to chaos (Sompolinsky, Crisanti & Sommers 1988) (`src/rate_chaos.py`)
+- [x] Random rate network and the transition to chaos (Sompolinsky, Crisanti & Sommers 1988) (`src/rate_chaos.py`)
   > Validate: largest Lyapunov exponent crosses zero at g = 1 (within 0.1 for N ≥ 1000); for g > 1 the autocorrelation matches the dynamic mean-field (classical particle in a potential) solution.
 - [ ] Fokker–Planck population density for LIF neurons (Brunel & Hakim 1999) (`src/lif_fokker_planck.py`)
   > Validate: stationary density and firing rate match the Siegert closed form; finite-difference PDE solution matches a large direct LIF population simulation after a step in input (rate transient within 5%).
